@@ -1,46 +1,54 @@
 {
-    "name": ":vendor_slug/:package_slug",
+    "name": "bramato/laravel-selling-partner-amazon",
     "description": ":package_description",
     "keywords": [
         ":vendor_name",
-        ":package_slug"
+        "laravel-selling-partner-amazon"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/bramato/laravel-selling-partner-amazon",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Marco Bramato",
+            "email": "marco@bramato.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "bramatom/selling-partner-amazon": "^0.1.2",
+        "illuminate/support": "^9.46"
     },
     "require-dev": {
-        :require_dev_testing,
-        :require_dev_codestyle,
         "spatie/ray": "^1.28"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Bramatom\\LaravelSellingPartnerAmazon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Bramatom\\LaravelSellingPartnerAmazon\\Tests\\": "tests"
         }
     },
     "scripts": {
-        :scripts_testing,
-        :scripts_codestyle
+
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            :plugins_testing,
             "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bramatom\\LaravelSellingPartnerAmazon\\AmazonSellingPartnerServiceProvider"
+            ],
+            "aliases": {
+                "AmazonSellingPartner": "Bramatom\\LaravelSellingPartnerAmazon\\Facades\\AmazonSellingPartner"
+            }
         }
     },
     "minimum-stability": "dev",

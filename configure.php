@@ -264,10 +264,10 @@ foreach ($files as $file) {
         ':author_username' => $authorUsername,
         'author@domain.com' => $authorEmail,
         ':vendor_name' => $vendorName,
-        ':vendor_slug' => $vendorSlug,
+        'bramato' => $vendorSlug,
         'VendorName' => $vendorNamespace,
         ':package_name' => $packageName,
-        ':package_slug' => $packageSlug,
+        'laravel-selling-partner-amazon' => $packageSlug,
         'Skeleton' => $className,
         ':package_description' => $description,
     ]);

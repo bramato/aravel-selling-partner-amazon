@@ -1,8 +1,8 @@
 # :package_description
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![Tests](https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/bramato/laravel-selling-partner-amazon.svg?style=flat-square)](https://packagist.org/packages/bramato/laravel-selling-partner-amazon)
+[![Tests](https://img.shields.io/github/actions/workflow/status/bramato/laravel-selling-partner-amazon/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/bramato/laravel-selling-partner-amazon/actions/workflows/run-tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/bramato/laravel-selling-partner-amazon.svg?style=flat-square)](https://packagist.org/packages/bramato/laravel-selling-partner-amazon)
 <!--delete-->
 ---
 This package can be used as to scaffold a framework agnostic package. Follow these steps to get started:
@@ -28,7 +28,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require bramato/laravel-selling-partner-amazon
 ```
 
 ## Usage

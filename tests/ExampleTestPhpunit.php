@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Bramatom\LaravelSellingPartnerAmazon\Facades\Tests;
 
 use PHPUnit\Framework\TestCase;
 
