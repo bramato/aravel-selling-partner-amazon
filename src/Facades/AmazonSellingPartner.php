@@ -10,5 +10,4 @@ class AmazonSellingPartner extends Facade
     {
         return 'amazon-selling-partner';
     }
-
 }
