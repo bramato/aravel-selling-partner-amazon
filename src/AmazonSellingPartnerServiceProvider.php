@@ -10,7 +10,7 @@ class AmazonSellingPartnerServiceProvider extends ServiceProviderAlias
     public function register()
     {
         $this->app->bind('amazon-selling-partner', function ($app) {
-            return new AmazonSellingPartner();
+            return new AmazonClient();
         });
     }
 }
