@@ -8,8 +8,7 @@ return new class extends Migration
 {
     public function up()
     {
-            Schema::create('amsp-order_item', function (Blueprint $table) {
-                Schema::create('orders', function (Blueprint $table) {
+            Schema::create('amsp-order_items', function (Blueprint $table) {
                     $table->increments('id');
                     $table->string('amazon_order_id');
                     $table->text('order_items');
@@ -34,7 +33,6 @@ return new class extends Migration
                     $table->string('gift_wrap_level')->nullable();
                     $table->string('price_designation');
                     $table->timestamps();
-                });
             });
 
 
@@ -47,6 +45,6 @@ return new class extends Migration
     */
     public function down()
     {
-        Schema::dropIfExists( 'amsp-order_item');
+        Schema::dropIfExists( 'amsp-order_items');
     }
 };
