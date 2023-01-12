@@ -2,8 +2,6 @@
 
 namespace Bramatom\LaravelSellingPartnerAmazon\Models;
 
-
-use Bramatom\LaravelSellingPartnerAmazon\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class AmspOrderItems extends Model
@@ -56,8 +54,9 @@ class AmspOrderItems extends Model
         'is_gift' => 'boolean',
         'is_transparency' => 'boolean',
     ];
-    public function order(){
+
+    public function order()
+    {
         return $this->belongsTo(AmspOrderItems::class, 'AmazonOrderId', 'amazon_order_id');
     }
-
 }

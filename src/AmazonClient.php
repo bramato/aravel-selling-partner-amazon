@@ -2,13 +2,13 @@
 
 namespace Bramatom\LaravelSellingPartnerAmazon;
 
-use Bramatom\SellingPartnerAmazon\AmazonMarketPlace;
 use Bramatom\SellingPartnerAmazon\AmazonMarketPlaceKey;
 use Illuminate\Support\Facades\Config;
 
 class AmazonClient
 {
     public AmazonMarketPlaceKey $key;
+
     /**
      * @throws \Exception
      */

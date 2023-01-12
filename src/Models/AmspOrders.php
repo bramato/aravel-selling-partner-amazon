@@ -2,8 +2,6 @@
 
 namespace Bramatom\LaravelSellingPartnerAmazon\Models;
 
-
-use Bramatom\LaravelSellingPartnerAmazon\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class AmspOrder extends Model
@@ -87,8 +85,9 @@ class AmspOrder extends Model
         'IsAccessPointOrder' => 'boolean',
         'HasAutomatedShippingSettings' => 'boolean',
     ];
-    public function orderItems(){
+
+    public function orderItems()
+    {
         return $this->hasMany(AmspOrderItems::class, 'amazon_order_id', 'AmazonOrderId');
     }
-
 }
